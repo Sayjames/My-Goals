@@ -1,0 +1,121 @@
+/* Reset some basic elements */
+body, h1, h2, p, ul, nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #B22222; /* Firebrick */
+    color: white;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Section styling */
+section {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 2rem;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Profile styling */
+.profile {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #B22222; /* Firebrick */
+    margin-bottom: 1rem;
+}
+
+.profile .info {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* Goals section styling */
+.goals h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #B22222; /* Firebrick */
+}
+
+.goals ul {
+    list-style: none;
+    padding: 0;
+}
+
+.goals ul li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.goals ul li::before {
+    content: "✔";
+    color: #B22222; /* Firebrick */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Footer styling */
+footer {    
+    background-color: #b22222cb;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(228, 9, 9, 0.1);
+    margin-top: auto;
+}
+
+footer nav a {
+    color: #ffffff; /* Firebrick */
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    section {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    footer nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
